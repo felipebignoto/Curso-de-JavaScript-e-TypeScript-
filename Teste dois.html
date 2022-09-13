@@ -7,15 +7,46 @@
     <title>aula box model</title>
 
     <style>
+        *{
+            margin: 0;
+            border:0;
+            box-sizing: border-box;
+        }
         .section-one{
             background-color: aqua;
+            background-image: url(https://img.freepik.com/fotos-gratis/belo-parque_1417-1418.jpg?w=2000);
+            background-position: center;
+            color: rgb(0, 0, 0);
+            width: 200px;
+            height: auto;
+            border: 5px solid rgb(0, 0, 0);
+            padding: 15px;
+            margin: 20px;
+
+        }
+
+        .section-two{
+            background-color: rgb(119, 119, 119);
+            width: 250px;
+            height: auto;
+            border-style: solid;
+            border-width: 10px;
+            border-bottom-color:red ;
+            border-top-color:blue ;
+            border-left-color:green ;
+            border-right-color:yellow ;
+
+            padding: 5px;
+            padding-top: 50px;
+            margin: 10px;
+            
         }
 
     </style>
 </head>
 
 <body>
-     <section class="section-one">1</section>
-     <section class="section-two">2 </section>
+     <section class="section-one">texto com altura automatica, imagem de fundo centralizada, </section>
+     <section class="section-two">margens e paddings personalizadas </section>
 </body>
 </html>
