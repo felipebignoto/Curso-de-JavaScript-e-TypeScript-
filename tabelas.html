@@ -19,11 +19,11 @@
 
         table{
             border-collapse: collapse;
-            width: 100%;
+            width: 500px;
         }
         table caption{
             caption-side: bottom;
-            text-align: center;
+            text-align: left;
             font-size: 12px;
             font-style: italic;
             margin: 5px 0;
@@ -36,11 +36,17 @@
         tfoot td{
             font-style: italic;
         }
+
+        .responsive{
+            width: 100%;
+            overflow: auto;
+
+        }
     </style>
 </head>
 <body>
     <p>Texto</p>
-    <div>
+    <div class="responsive">
     <table>
 
         <caption>Uma descrição para tabela é com "caption"</caption>
