@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table td,table th{
+
+            border: 1px solid rgb(15, 15, 15);
+            padding 5px;
+            text-align: left;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        tfoot td, thead th{
+            background-color: #ccc;
+        }
+
+        tfoot td{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p>Texto</p>
+    <div>
+    <table>
+
+        <caption>Uma descrição para tabela é com "caption"</caption>
+        <thead>
+            <tr>
+                <th>"thead" é o cabeçalho da tabelas</th>
+                <th>coluna é com "th"</th>
+                <th>tabelas com "table"</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>corpo é "tbody"</td>
+                <td>coluna do corpo é "td"</td>
+                <td>linha é com "tr"</td>
+                
+            </tr>
+
+            <tr>
+                <td>outra linha do corpo"</td>
+                <td>observar para ficar completa</td>
+                <td>outra coluna da outra linha</td>
+                
+            </tr>
+
+            <tr>
+                <td colspan="2" rowspan="2">mais de uma coluna ou linha é com colspan/rowspan</td>
+                <td>teste 2</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">teste 3</td>
+                
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>rodapé é com "tfoot"</td>
+                <td>linha com "tr"</td>
+                <td>coluna com "td"</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+
+</body>
+</html>
