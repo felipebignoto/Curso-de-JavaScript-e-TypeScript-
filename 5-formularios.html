@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>formularios</title>
+
+    <style>
+        label{
+            cursor: pointer;
+            
+        }
+
+        .teste {
+            display: block;
+        }
+    </style>
 </head>
+
+
 <body>
-    
-</body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        formulario é com "form"<br>
+        não pode usar formulario dentro do outro<br>
+        action é para onde o formulario vai ser enviado
+        o targer e o autocomplete estão so para a aula, não é necessario <br>
+        <section>
+            <h1>Cabeça - exemplo errado</h1>
+            <p>O formulario</p>
+
+            <fieldset>
+                <legend>descrição</legend>
+                <input type="text">
+            </fieldset>
+        </section>
+    </form>
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>---------------------------------------------------------</p>
+        <p >Meu formulario - exemplo correto</p>
+        <p>
+            <input type="text" id="nome" name="nome" placeholder="desativado" disabled><br>
+            <input type="text" id="nome" name="nome" placeholder="apenas leitura" readonly><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" >
+        </p>
+
+        <p>
+            <button type="submit"> Enviar</button>
+            <button type="reset"> limpar</button>
+            
+        </p>
+
+        <p>---------------------------------------------------------</p>
+
+        <p>
+            <label for="nome"> Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" >
+        </p>
+        <p>---------------------------------------------------------</p>
+
+        <p>
+            <label for="dev4"> Sou um dev4:</label>
+            <input type="checkbox" id="dev4"  >
+        </p>
+
+        <p>
+            <label for="dev5"> Sou um dev5: já começa marcado</label>
+            <input type="checkbox" id="dev5" checked >
+        </p>
+
+        <p>
+            <label for="dev6"> campo obrigatorio</label>
+            <input type="checkbox" id="dev6" required >
+        </p>
+        <p>---------------------------------------------------------</p>
+        <p>
+            Escolha: tem como marcar nenhuma e todas<br>
+            <label for="dev"> sou um dev</label>
+            <input type="checkbox" id="dev" value="sim" ><br>
+
+            <label for="dev1"> sou um dev1</label>
+            <input type="checkbox" id="dev1" value="sim" ><br>
+
+            <label for="dev2"> sou um dev2</label>
+            <input type="checkbox" id="dev2" value="sim" >
+        </p>
+
+        <p>---------------------------------------------------------</p>
+        
+    </form>
+
+    <form class="teste">
+        <p >
+            Genero: so é possivel marcar uma opção<br>
+            <label for="feminino"> feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" >
+
+            <label for="masculino"> masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" >
+
+            <label for="outros"> outros</label>
+            <input type="radio" id="outros" name="genero" value="outros" >
+        </p>
+    </form>
+    </body>
 </html>
