@@ -10,11 +10,14 @@
         label{
             cursor: pointer;
             
+            
         }
 
-        .teste {
+        .teste label{
             display: block;
         }
+
+        
     </style>
 </head>
 
@@ -37,7 +40,7 @@
     </form>
 
     <form action="#" method="get" target="_blank" autocomplete="off">
-        <p>---------------------------------------------------------</p>
+        <hr>
         <p >Meu formulario - exemplo correto</p>
         <p>
             <input type="text" id="nome" name="nome" placeholder="desativado" disabled><br>
@@ -45,19 +48,15 @@
             <input type="text" id="nome" name="nome" placeholder="Seu nome" >
         </p>
 
-        <p>
-            <button type="submit"> Enviar</button>
-            <button type="reset"> limpar</button>
-            
-        </p>
+        
 
-        <p>---------------------------------------------------------</p>
+        <hr>
 
         <p>
             <label for="nome"> Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" >
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
         </p>
-        <p>---------------------------------------------------------</p>
+        <hr>
 
         <p>
             <label for="dev4"> Sou um dev4:</label>
@@ -73,7 +72,7 @@
             <label for="dev6"> campo obrigatorio</label>
             <input type="checkbox" id="dev6" required >
         </p>
-        <p>---------------------------------------------------------</p>
+        <hr>
         <p>
             Escolha: tem como marcar nenhuma e todas<br>
             <label for="dev"> sou um dev</label>
@@ -86,7 +85,31 @@
             <input type="checkbox" id="dev2" value="sim" >
         </p>
 
-        <p>---------------------------------------------------------</p>
+        <hr>
+
+        <p>
+            <label for="data"> date:</label>
+            <input type="date" id="date" name="date" >
+        </p>
+        <hr>
+        <p>
+            <label for="datatime"> date time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2022-12-02T12:00">
+        </p>
+        <hr>
+        
+        <p>
+            <label for="time"> date time:</label>
+            <input type="time" id="time" name="time" value="12:00:00">
+        </p>
+        <hr>
+
+        <p>
+            <label for="color"> cor preferida:</label>
+            <input type="color" id="color" name="color" value="#ff0000">
+        </p>
+        <hr>
+
         
     </form>
 
@@ -101,6 +124,16 @@
 
             <label for="outros"> outros</label>
             <input type="radio" id="outros" name="genero" value="outros" >
+        </p>
+
+    </form>
+
+    <hr>
+    <form>
+        <p>
+            <button type="submit"> Enviar</button>
+            <button type="reset"> limpar</button>
+            
         </p>
     </form>
     </body>
