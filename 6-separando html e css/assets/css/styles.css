@@ -1,5 +1,70 @@
 .caixa3{
     background-color: rgb(0, 167, 28);
     width: 120px;
-    height: 120px;
+    height: 60px;
 }
+
+ /* Seletores 
+ 
+    1)* = todos, normalmente zeramos as margens e os paddings
+    2) por tag = nome da tag
+    3) caminho
+    4) com virgula posso aplicar o mesmo estilo em duas tags diferentes
+    5) por classe, usando .nome da classe
+    6) posso selecionar os filhos que sejam dentro da class
+    7) posso usar a classe dentro de outra classe
+    8) filha especifica de um pai especifico
+    9) para selecionar um p logo depois de h1 = hi+p
+    10) para selecionar todos os p depois de h1 = h1~p
+    11) para selecionar pelo atributo = [nome atributo]
+    12) paar selecionar so um atributo especifico = [nome do atributo = "tipo"]
+    13) paar selecionar os que tenham o atributo = [nome do atributo ~= "tipo"]
+    14) para o atributo que começa com algo = ^=inicio
+    15) termina com = $=final
+    16) contem = *=algo
+    */
+
+ *{
+    margin:  0;
+    padding: 0;
+ }
+
+ /*p{
+    color: blue;
+ }*/
+
+ body div section p{
+    color: red;
+ }
+
+ body div section p,
+ body div section h1{
+    background-color: aqua;
+ }
+
+ .cor-amarela{
+    background-color: rgb(255, 255, 0);
+ }
+
+ .pai h1 + p{
+    /*P depois de h1 que esta dentro de pai*/
+    color: red;
+ }
+
+ .pai p+h1{
+    /*h1 depois de p que esta dentro de pai*/
+    color: rgb(43, 255, 0);
+ }
+
+ .pai h1~p{/*todos os p depois de algum h1*/
+    background-color: rgb(107, 107, 107);
+ }
+
+ [meu-atributo]{
+    color: aquamarine;
+ }
+
+ [meu-atributo~="valor2"]{
+    background-color: rgb(255, 0, 0);
+ }
+
