@@ -1,5 +1,13 @@
 
+/*Pseudo classes
 
+    1) houver é utilizado enquanto o mouse está em cima
+    2) active enquanto está sendo clicado
+    3) posso selecionar so o primeiro ou o ultimo elemento da lista
+    4) not para excuir algum trecho especifico
+    5) nth-child 
+
+*/
 .heading{
     transition: all 300ms ease-in-out;
 }
@@ -51,4 +59,20 @@ input:checked +p{ /*Muda a cor do p*/
 
 .pai .lista li:last-child{
     background-color: rgb(2, 2, 2);
+}
+
+p:not(.meio){
+    color: blue;
+}
+
+.lista2 ul li:nth-child(2){
+    color: rgb(255, 0, 255);
+}
+
+.lista2 ul li:nth-child(even){
+    background-color: aquamarine;
+}
+
+.lista2 ul li:nth-child(odd){
+    text-decoration:underline;
 }
