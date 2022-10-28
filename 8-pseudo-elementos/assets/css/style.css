@@ -1,0 +1,30 @@
+
+ul li::before{
+    content: ' - ';
+    background-color: rgb(0, 255, 13);
+    color: blue;
+    display: block;
+}
+
+ul li::after{
+    content: ' - ';
+    background-color: red;
+    color: blue;
+    display: block;
+}
+
+p::first-letter{
+    font-size: 150px;
+    display: block;
+    float:left;
+    margin: 0 10px 10px 0;;
+}
+
+p::first-line{
+    background-color: red;
+}
+
+p::selection{
+    background-color: black;
+    color: aliceblue;
+}
