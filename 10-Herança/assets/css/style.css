@@ -1,0 +1,54 @@
+/*Lista de propriedades que são passadas: 
+    
+
+        border-collapse
+        border-spacing
+        caption-side
+        color
+        cursor
+        direction
+        empty-cells
+        font-family
+        font-size
+        font-style
+        font-variant
+        font-weight
+        font-size-adjust
+        font-stretch
+        font
+        letter-spacing
+        line-height
+        list-style-image
+        list-style-position
+        list-style-type
+        list-style
+        orphans
+        quotes
+        tab-size
+        text-align
+        text-align-last
+        text-decoration-color
+        text-indent
+        text-justify
+        text-shadow
+        text-transform
+        visibility
+        white-space
+        widows
+        word-break
+        word-spacing
+        word-wrap
+
+*/
+
+#texto{ /*Passa para o que esá dentro do ID texto*/
+    color: red;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+
+p{ 
+    font-size:  inherit; /*Herdado*/
+    color: initial;/*Não herda*/
+
+}
