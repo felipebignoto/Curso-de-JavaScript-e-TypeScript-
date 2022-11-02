@@ -1,0 +1,40 @@
+/*
+ID - classes, atributos e pseudo classses - elementoes e pseudo-elementos
+Quanto mais especific, maior a chance dele ser usado
+Para ver a especificidade é só passar o mouse em cima da definição
+A ordem não importa , só a especificidade
+recomendavel usar so uma classe para poder alterar por cima
+style é super especifico
+se usar !important = força a ser utilizadp
+regras: especificidade - empate - style - !important
+*/
+
+#p{ /* ID -  1,0,0 - */
+    background-color: red;
+}
+
+.p{ /* clases -  0,1,0 - */
+    background-color: blue;
+}
+
+#p.p{ /* clases e id -  1,1,0 - */
+    background-color: rgb(4, 255, 150);
+}
+
+p#p{ /*id e elemento - 1,0,1*/
+    background-color: blueviolet;
+}
+
+p#p.p{ /*todos os tres - 1,1,1*/
+    background-color: brown;
+}
+
+#b p#p.p{
+    background-color: rgb(255, 0, 234);
+}
+
+body#b p#p.p{
+    background-color: rgb(94, 94, 94);
+}
+
+
