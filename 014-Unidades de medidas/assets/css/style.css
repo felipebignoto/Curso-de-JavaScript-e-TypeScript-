@@ -1,0 +1,47 @@
+/*
+Medidas abbsoulutas e relativas
+
+medidas absolutas: px,cm,mm,pt,pc
+medidas relativas: em,ex,xh,rem,ww,vh,vmin,vmax,%
+porcentagem = em relaçõa ao elemento pai
+
+mais usadas: px e %
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{/* fica com 10px*/
+    font-size: 62,5%;
+    scroll-behavior: smooth;/* anda devagar pelo site*/
+}
+.pai{
+    width: 50rem; /*porcentagem da tela*/
+   height: 100vh;
+   background-color: yellow;
+   overflow: hidden;
+}
+
+.pai >p{/* Fica com 50*0.5 = 25px*/
+    width: 50%;
+    height: 5100vh;
+    background-color: rgb(189, 130, 3);
+}
+
+.p2{/* Fica com 1 * 10= 10*/
+    font-size: 1rem;
+}
+
+.pai2{
+    width: 100vw; /*porcentagem da tela*/
+    height: 100vw;
+   background-color: rgb(20, 2, 175);
+   color: aliceblue;
+}
+
+.pai3{
+    width: 100vw; /*porcentagem da tela*/
+    height: 100vw;
+   background-color: rgb(180, 20, 68);
+}
+
