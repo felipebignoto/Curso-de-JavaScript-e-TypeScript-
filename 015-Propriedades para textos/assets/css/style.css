@@ -1,0 +1,52 @@
+/* Propriedades para textos
+
+    color: cor do texto
+    background: cor do fundo do texto
+
+    font-size: tamanho
+    font-style: estilo
+    font-weight: bold = negrito
+
+     direction: ltr = left to right
+
+     letter-spacing: 5px = espaçamento entre as letras
+     word-spacing: auto; = 
+
+     line-height: 25px = altura da linha
+
+     text-align: alinhamenti(centro,etc)
+     text-decoratio: linhas
+
+     text-indent: 50px; = identação
+     text-shadow: 2px 2px 5px rgb(111, 0, 255); = sombra
+
+     text-transform: capitalize; = maaiusculo, minisculo, primeiras letras maiusculas
+
+*/
+
+p{
+    color: red; 
+    background-color: yellow;
+
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+    direction: ltr;
+
+    letter-spacing: auto;
+    word-spacing: auto;
+    line-height: 25px;
+
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration: overline;
+    text-decoration: underline;
+
+    text-indent: 50px;
+    text-shadow: 2px 2px 5px rgb(111, 0, 255);
+
+    text-transform: capitalize;
+
+
+}
