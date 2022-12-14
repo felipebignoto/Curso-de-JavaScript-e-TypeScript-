@@ -1,0 +1,38 @@
+*{
+    padding: 0;;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;/*eixo secundario*/
+    background-color: yellow;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    height: 800px;
+}
+
+.flex-item{
+    
+    background-color: brown;
+    color: aliceblue;
+    width: 100%;
+}
+
+.flex-item:nth-child(3){
+    
+    background-color: rgb(105, 32, 173);
+    color: aliceblue;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(4){
+    
+    background-color: rgb(105, 32, 173);
+    color: aliceblue;
+    width: 100%;
+    align-self: center;
+}
+
