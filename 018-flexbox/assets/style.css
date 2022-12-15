@@ -4,35 +4,34 @@
     box-sizing: border-box;
 }
 
-.flex-container{
+body{
+    font-size: 24px;
+}
+
+.two-columns{
     display: flex;
-    justify-content: space-between;/*eixo secundario*/
-    background-color: yellow;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    height: 800px;
 }
 
-.flex-item{
-    
-    background-color: brown;
-    color: aliceblue;
-    width: 100%;
+.two-columns .col{
+    background-color: green;
+    margin: 15px;
+    padding: 30px;
+    flex-direction: column;
+    display: flex;
+}
+p{
+    margin: 0 0 24px;
 }
 
-.flex-item:nth-child(3){
-    
-    background-color: rgb(105, 32, 173);
-    color: aliceblue;
-    width: 100%;
-    align-self: flex-end;
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.flex-item:nth-child(4){
-    
-    background-color: rgb(105, 32, 173);
-    color: aliceblue;
-    width: 100%;
-    align-self: center;
+.gallery .img{
+    flex: 1 0 20%;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
 }
 
