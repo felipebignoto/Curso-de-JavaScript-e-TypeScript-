@@ -12,24 +12,14 @@ body{
 .grid{
     max-width: 1200px;
     display: grid;
-    /*grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));*/
-    grid-template-columns: [um] 1fr [dois] 1fr [tres] 1fr [quatro] ;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /*grid-template-columns: [um] 1fr [dois] 1fr [tres] 1fr [quatro] ;*/
     /*grid-template-rows: repeat(2, 1fr 2fr) ;*/ 
-    grid-gap:30px;
+    gap: 30px 60px;/*linha - coluna*/
     margin: 0 auto;
 }
 
 .grid div{
     background-color: blueviolet;
     min-height: 100px;
-}
-
-.grid div:nth-child(5){
-    /*grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row: span 2;
-    grid-column: span 3 ;*/
-
-    background-color: aquamarine;
-    grid-column: um / tres;
 }
