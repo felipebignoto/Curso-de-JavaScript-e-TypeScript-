@@ -33,6 +33,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
    
 }
 
@@ -98,7 +99,7 @@ h6{
     right: 0;
     width: 100%;
     border-bottom: 0.1rem solid var(--light-gray-color);
-
+    z-index: 1;
 }
 
 
@@ -154,4 +155,37 @@ a{
 .menu ul li a:hover::after{
     width: 50%;
     left: 25%;
+}
+
+.menu-spacing{
+    height: 65px;
+}
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+    position: relative;
+    top: -15rem;
+    
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+}
+
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+
 }
