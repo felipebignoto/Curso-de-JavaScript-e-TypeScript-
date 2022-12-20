@@ -26,6 +26,7 @@ background-size: cover;
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
     
 }
 
@@ -48,8 +49,12 @@ h1{
 }
 
 h2{
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
 }
+
 
 h3{
     font-size: 5rem;
@@ -81,7 +86,7 @@ h6{
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
@@ -90,6 +95,7 @@ h6{
 
 .white-bg{
    background-color: var(--white-color);
+   color: var(--primary-color);
 }
 
 .menu{
@@ -165,7 +171,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     top: -15rem;
     
@@ -177,15 +183,66 @@ a{
     justify-content:center;
 }
 
-.intro-text-content h2{
-    font-size: 6rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1;
-}
+    
 
-.intro-img img{
+.intro-img img, .intro-img svg{
     max-width: 100%;
     height: auto;
+
+}
+
+.top3-content{
+    max-width: 64rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 3rem;
+}
+
+.grid-one-content{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid-main-heading{
+    margin-bottom: 2rem;
+}
+
+.grid-description{
+    padding-bottom: 5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    
+}
+
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 6rem;
+    font-style: italic;
+    top: -2.5rem;
+    left: 0.5rem;
+    transform: rotate(5deg);
 
 }
