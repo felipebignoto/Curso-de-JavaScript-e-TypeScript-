@@ -260,4 +260,47 @@ p{
 
 .gallery-img img:hover{
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+    
+}
+
+.gallery-img:hover{
+    border-color: rgb(132, 20, 20);
+    border: 10px;
+    border:solid;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 360px;
+
+}
+
+table td, table th{
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+tfoot td{
+    background-color: var(--light-gray-color);
+}
+
+thead th{
+    background-color: var(--light-gray-color);
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+
+}
+
+.responsive-table{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
 }
