@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #0a11228;
+    --primary-color: #0a1128;
     --white-color: #fff;
     --light-gray-color: #EEE;
     --gap: 3rem;
@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*
@@ -158,6 +159,11 @@ a{
     transition: all 300ms ease-in-out;
 }
 
+.menu h1 a:hover{
+    font-size: 125%;
+    transition: all 250ms ease-in-out;
+}
+
 .menu ul li a:hover::after{
     width: 50%;
     left: 25%;
@@ -173,7 +179,7 @@ a{
     gap: var(--gap);
     min-height: 100vh;
     position: relative;
-    top: -15rem;
+    /*top: -15rem;*/
     
 }
 
@@ -256,6 +262,7 @@ p{
 
 .gallery-img img{
     transition: all 300ms ease-in-out;
+    
 }
 
 .gallery-img img:hover{
@@ -263,14 +270,14 @@ p{
     
 
 }
-
+/* EU QUE FIZ*/
 .gallery-img:hover{
-    border-color: rgb(132, 20, 20);
-    border: 10px;
-    border: double;
+    border: dashed;
+    border-color: var(--primary-color);
     border-radius: 40px;
-    box-shadow: 5px 5px 20px  rgb(52, 7, 112);
-    transition: all 200ms ease-in-out;
+    box-shadow: 5px 5px 20px 5px rgb(2, 129, 248);
+    transition: all 250ms ease-in-out;
+    
 }
 
 table{
@@ -309,3 +316,79 @@ table caption{
     overflow-x: auto;
 }
 
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:var(--gap);
+}
+
+.form-group{
+    flex: 1 1 320px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background-color: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background: none ;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    color:var(--white-color);
+}
+
+.form-group button:hover{
+    background: var(--white-color) ;
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder{
+    color: var(--light-gray-color);
+    
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer a{
+    color: var(--primary-color);
+}
+
+.heart{
+    color: var(--secondary-color);
+}
+
+.footer p{
+    margin:0;
+    padding: 3rem;
+}
