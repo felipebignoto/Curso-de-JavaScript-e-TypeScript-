@@ -255,18 +255,22 @@ p{
 }
 
 .gallery-img img{
-    transition: all 300ms ease-in-out
+    transition: all 300ms ease-in-out;
 }
 
 .gallery-img img:hover{
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
     
+
 }
 
 .gallery-img:hover{
     border-color: rgb(132, 20, 20);
     border: 10px;
-    border:solid;
+    border: double;
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px  rgb(52, 7, 112);
+    transition: all 200ms ease-in-out;
 }
 
 table{
@@ -304,3 +308,4 @@ table caption{
     overflow: hidden;
     overflow-x: auto;
 }
+
