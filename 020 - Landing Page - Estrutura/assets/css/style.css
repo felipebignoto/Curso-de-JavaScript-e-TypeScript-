@@ -199,7 +199,7 @@ a{
 
 .top3-content{
     max-width: 64rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -391,4 +391,25 @@ body .full-width{
 .footer p{
     margin:0;
     padding: 3rem;
+}
+
+@media(max-width: 800px){
+    
+    .intro-content, .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img{
+        width: 100%;
+        max-width: 100%;
+        max-height: auto;
+    }
+
+    .gallery-img img{
+        width: 100%;
+    }
+
+    .grid-one-content{
+        display: block;
+    }
 }
