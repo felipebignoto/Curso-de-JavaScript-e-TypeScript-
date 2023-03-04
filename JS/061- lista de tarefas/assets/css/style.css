@@ -20,12 +20,14 @@ body {
 }
 
 .container {
+  width: 75%;
   max-width: 640px;
   margin: 50px auto;
   background: linear-gradient(90deg, var(--primary-color) 0%, rgb(29, 112, 167));
   border: 5px solid black;
   border-radius: 5%;
   padding: 30px;
+  
 }
 
 .container h1{
@@ -37,6 +39,7 @@ body {
 .container p{
   text-align: center;
   font-size: 30px;
+  
 
 }
 
@@ -60,11 +63,17 @@ body {
 
 .container ul button{
   background-color: rgb(196, 12, 12);
-  color: rgb(202, 217, 230);
-  text-transform: uppercase;
-  border: none;
-  
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+
 }
 
+@media(max-width:340px ){
+  .container {
+    width: 100%;
+   
+  
+  }
+}
 
 
