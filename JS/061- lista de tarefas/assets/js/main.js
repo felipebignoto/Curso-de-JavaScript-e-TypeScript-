@@ -14,6 +14,7 @@ function criaTarefa(textoInput){//recebe o texto quando enviar uma tarefa no inp
     tarefas.appendChild(li);
     limpaInput();
     criaBotaoApagar(li);
+    salvarTarefa();
 }
 
 function criaLi(){//cria a lista(li)
@@ -46,6 +47,31 @@ function criaBotaoApagar(li){//cria o botao para remover a terefa
 document.addEventListener("click",function(e){
     const el = e.target;
     if(el.classList.contains("apagar")){
-        
+        el.parentElement.remove();
+        salvarTarefa();
     }
 })
+
+//para salvar as tarefas
+function salvarTarefa(){
+    const liTarefas = tarefas.querySelectorAll("li");
+    const listaTarefas =[];
+    for(let tarefa of liTarefas){
+        let tarefaTexto = tarefa.innerText;
+        tarefaTexto = tarefaTexto.replace("Apagar","").trim();
+        listaTarefas.push(tarefaTexto);
+    }
+    const tarefasJSON = JSON.stringify(listaTarefas);
+    localStorage.setItem("tarefas",tarefasJSON);
+}
+
+//função para iniciar o site com as tarefas salvas
+function addTarefasSalvas(){
+    const tarefas = localStorage.getItem("tarefas");
+    const listaTarefas = JSON.parse(tarefas);
+    for(let tarefa of listaTarefas){
+        criaTarefa(tarefa);
+    }
+}
+
+addTarefasSalvas();

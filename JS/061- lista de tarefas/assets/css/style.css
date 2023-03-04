@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: rgb(73, 152, 170);
-  --primary-color-darker: rgb(17, 187, 82);
+  --primary-color-darker: rgba(67, 207, 218, 0.5);
 }
 
 * {
@@ -22,38 +22,49 @@ body {
 .container {
   max-width: 640px;
   margin: 50px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  background: linear-gradient(90deg, var(--primary-color) 0%, rgb(29, 112, 167));
+  border: 5px solid black;
+  border-radius: 5%;
+  padding: 30px;
 }
 
-form input, form label, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
+.container h1{
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline; 
 }
 
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
+.container p{
+  text-align: center;
+  font-size: 30px;
+
 }
 
-form input:focus {
-  outline: 1px solid var(--primary-color);
+.btn-tarefa{
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(42, 153, 66);
+  padding: 5px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  
 }
 
-form button {
+.container input{
+  font-size: 15px;
+  border: solid 1px rgb(8, 8, 8);
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+
+.container ul button{
+  background-color: rgb(196, 12, 12);
+  color: rgb(202, 217, 230);
+  text-transform: uppercase;
   border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
+  
 }
 
-form button:hover {
-  background: var(--primary-color-darker);
-}
+
+
