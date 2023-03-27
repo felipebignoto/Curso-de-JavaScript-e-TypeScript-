@@ -1,4 +1,4 @@
-//função construtora -> cria novo objeto, faz muita coisa automatica, retorna objetp- teste
+//função construtora -> cria novo objeto, faz muita coisa automatica, retorna objetp
 //iniciar com letra maiuscula
 
 function Pessoa(nome, sobrenome){
